@@ -1,0 +1,24 @@
+<?php    
+
+	$a = true;    
+	$b = false;    
+	$c = $a && $b;    
+	$d = $a || $b;    
+	
+	if ( $c )    {        
+		echo "A-";    
+	}    
+	
+	if ( $d )        
+		echo "B-";    
+		
+	if ( $c &&  $d )    {        
+		echo "C-";    
+	}    
+	
+	if ( $c ||  $d )
+		echo "D-"; 
+
+?>
+
+/* affichage --> B-D- */

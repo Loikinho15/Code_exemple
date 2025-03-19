@@ -1,0 +1,18 @@
+<?php   
+
+	$nom1 = "john";   
+	$nom2 = "sixpack";   
+	
+	echo "a) Hello $nom1 <br>";   
+	echo 'b) Hello $nom2 <br>';   
+	echo "c) Hello $nom1.$nom2 <br>";   
+	echo 'd) Hello $nom1.$nom2 <br>';   
+	echo 'e) Hello '.$nom1.$nom2.' <br>'; 
+
+?>
+
+--> a) Hello john
+	b) Hello $nom2
+	c) Hello john.sixpack
+	d) Hello $nom1.$nom2
+	e) Hello johnsixpack 

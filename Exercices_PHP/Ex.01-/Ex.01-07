@@ -1,0 +1,59 @@
+<?php 
+  
+	$a = '13';    
+	$b = 13;        
+	
+	if ( $a == $b )        
+		echo "a) Nous avons la même valeur <br>";     
+		
+	if ( $a === $b )        
+		echo "b) Nous avons la même valeur et le même type. <br>";        
+			
+	if ( "12" === "14" )        
+		echo "c) ne serra pas affiché <br>";        
+			
+	if  ( $a !== $b )
+		echo "d) Nous n’avons pas (la même valeur ou) le même type <br>";        
+		
+	if  ( "100" == "1e2" )        
+		echo "e) Pourquoi donc ? <br>";       
+
+	if  ( 0 == "un" )        
+		echo "f) Pourquoi encore ? <br>";        
+		
+	if  ( 0 == "1+1" )        
+		echo "g) Pourquoi pas ? <br>";        
+		
+	if  ( "2" == 1+1 )        
+		echo "h) Ça calcule ? <br>";
+		
+?><?php 
+  
+	$a = '13';    
+	$b = 13;        
+	
+	if ( $a == $b )        
+		echo "a) Nous avons la même valeur <br>";     
+		
+	if ( $a === $b )        
+		echo "b) Nous avons la même valeur et le même type. <br>";     /*pas pris en compte car même valeur mais pas même type (int/char)*/  
+			
+	if ( "12" === "14" )        
+		echo "c) ne serra pas affiché <br>";        /*pas pris en compte car pas la même valeur même si même type (12/14)*/
+			
+	if  ( $a !== $b )
+		echo "d) Nous n’avons pas (la même valeur ou) le même type <br>";        
+		
+	if  ( "100" == "1e2" )        
+		echo "e) Pourquoi donc ? <br>";       
+
+	if  ( 0 == "un" )        
+		echo "f) Pourquoi encore ? <br>";        
+		
+	if  ( 0 == "1+1" )        
+		echo "g) Pourquoi pas ? <br>";    /*pas pris en compte car même si les 1 sont des chaînes de caractères ça reste des chiffres*/    
+		
+	if  ( "2" == 1+1 )        
+		echo "h) Ça calcule ? <br>";
+		
+?>

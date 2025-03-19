@@ -1,0 +1,25 @@
+		<?php
+	 
+			function echoln($a){
+				echo "$a <br>";
+				
+			}
+			
+			echoln("Bonjour Alf");
+			echoln("Bonjour Olgi");
+		?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
