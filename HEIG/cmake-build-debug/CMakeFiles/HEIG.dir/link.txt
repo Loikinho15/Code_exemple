@@ -1,0 +1,3 @@
+"D:\Clion\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\HEIG.dir/objects.a
+D:\Clion\CLION2~1.2\bin\mingw\bin\ar.exe qc CMakeFiles\HEIG.dir/objects.a @CMakeFiles\HEIG.dir\objects1.rsp
+D:\Clion\CLION2~1.2\bin\mingw\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\HEIG.dir/objects.a -Wl,--no-whole-archive -o HEIG.exe -Wl,--out-implib,libHEIG.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\HEIG.dir\linkLibs.rsp

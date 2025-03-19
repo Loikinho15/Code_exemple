@@ -1,0 +1,75 @@
+.container-jeu {
+	height: 370px;
+	width: 370px;
+}
+
+.container-jeu .row {
+	height: 100%;
+}
+
+.carrejeu { 
+	border : 2px solid #F7F7F7;
+	height: 25%;
+	padding: 0;
+	
+	/*On cache ce qui dépasse de notre "carre-jeu"*/
+	overflow:hidden;
+	
+}
+
+.face-container {
+	height: 200%;
+	width: 100%;	
+
+/*On prépare pour pouvoir changer la position de ce qui est cacher*/
+	position: absolute;
+	top : 0;
+/* On ajoute une vitesse de transition quand la face change*/
+	transition: 400ms;
+}
+
+/*Pour changer à la facecacher*/
+.flipped .face-container{
+	top: -100%;
+}
+
+.facevisible {
+	height : 50%;
+	background-color : #D0D0D0;
+}
+
+.facecacher {
+	height: 50%;
+}
+
+#reset-button{
+	margin: 15px auto 0;
+	width: 370px;
+}
+
+/* Classe des couleurs pour le js quand les cases seront face visible*/
+
+.color-0 {
+	background-color: aqua;
+}
+.color-1 {
+	background-color: bisque;
+}
+.color-2 {
+	background-color: blue;
+}
+.color-3 {
+	background-color: blueviolet;
+}
+.color-4 {
+	background-color: brown;
+}
+.color-5 {
+	background-color: cadetblue;
+}
+.color-6 {
+	background-color: chartreuse;
+}
+.color-7 {
+	background-color: coral;
+}
